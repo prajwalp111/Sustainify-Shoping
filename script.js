@@ -3,23 +3,27 @@ const itemcost = document.querySelector('#itemcost');
 const list = document.querySelector('#list');
 const btn = document.querySelector('#addItems');
 
-let tcost = prompt('Enter the total cost');
+const cBalance = document.querySelector('#cbalanceNum'); 
+const tBalance = document.querySelector('#tcost'); 
 
 function isNum(cost) {
     return !isNaN(cost) && cost > 0;
 }
 
-while (!isNum(parseFloat(tcost))) {
-    tcost = prompt('Enter a valid total cost');
+
+function enterAmount() {
+    let tcost = prompt("Enter the total cost");
+    while (!isNum(parseFloat(tcost))) {
+        tcost = prompt("Enter a valid total cost");
+    }
+    tcost = parseFloat(tcost);
+    // document.getElementById("tcost").textContent = tcost;
+    // document.getElementById("cbalanceNum").textContent = tcost;
+
+    tBalance.textContent = `₹${tcost.toFixed(2)}`; 
+cBalance.textContent = `${tcost.toFixed(2)}`; 
 }
 
-tcost = parseFloat(tcost);
-
-const cBalance = document.querySelector('#cbalanceNum'); 
-const tBalance = document.querySelector('#tcost'); 
-
-tBalance.textContent = `₹${tcost.toFixed(2)}`; 
-cBalance.textContent = `${tcost.toFixed(2)}`; 
 
 btn.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent form submission
@@ -55,11 +59,21 @@ function calculate(icost){
 
 function addList(iname, icost) {
     const newitem = document.createElement('li');
-    newitem.textContent = `${iname} - ₹${icost.toFixed(2)}`;
+    newitem.className = "list-group-item d-flex justify-content-between align-items-center";
+    newitem.innerHTML = `<span class="badge bg-info">${iname}</span> - <span class="badge bg-info">  ₹${icost.toFixed(2)}</span>
+    <button class="btn btn-danger btn-sm" onclick="removeProduct(this , ${icost})">Remove</button> `;
     list.appendChild(newitem);
 }
 
+
+function removeProduct(button,addcost) {
+    
+    let currentBalance = parseFloat(cBalance.textContent);
+    currentBalance += addcost;
+    cBalance.textContent = `${currentBalance.toFixed(2)}`;
+    button.parentElement.remove();
+}
 //delete
-list.addEventListener('dblclick' , (e)=>{
-    e.target.remove();
-});
+// list.addEventListener('click' , (e)=>{
+//     e.target.remove();
+// });

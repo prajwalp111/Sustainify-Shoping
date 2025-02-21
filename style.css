@@ -1,4 +1,6 @@
-
+body{
+    background-color: antiquewhite;
+}
 
 #stats{
     width: 50%;
@@ -34,11 +36,38 @@
     width: 50%;
     
 } */
+
+#sidebar{
+    display: table-column;
+   
+}
+
  #list{
 
-    background-color: aquamarine;
+    
     padding-bottom: 20px;
     list-style: none;
     text-align: center;
     font-size: x-large;
+ }
+
+ #foot{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: fixed;
+   bottom: 0;
+    
+ }
+
+ ul button{
+    width: 100%;
+ }
+
+ #list li{
+    width: 100%;
+ }
+ #list li button{
+    width : 20%
  }
