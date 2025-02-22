@@ -39,6 +39,12 @@ btn.addEventListener('click', (e) => {
         return;
     }
 
+    let currentBalance = parseFloat(cBalance.textContent);
+
+    if (icost > currentBalance) {
+        alert('Not enough balance!');
+        return;
+    }
     
     addList(iname, icost);
     calculate(parseFloat(icost));
@@ -49,13 +55,15 @@ btn.addEventListener('click', (e) => {
 
 function calculate(icost){
     let currentBalance = parseFloat(cBalance.textContent);
+
     if (icost > currentBalance) {
         alert('Not enough balance!');
         return;
     }
+
     currentBalance -= icost;
-    cBalance.textContent = `${currentBalance.toFixed(2)}`;
-}
+    cBalance.textContent = `${currentBalance.toFixed(2)}`;}
+
 
 function addList(iname, icost) {
     const newitem = document.createElement('li');
