@@ -59,7 +59,7 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For any inquiries, reach out to prajwalp!812@gmail.com.
+For any inquiries, reach out to prajwalp1812@gmail.com.
 
 
 
