@@ -1,0 +1,123 @@
+
+    <%- include('partials/head') %>
+   
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-PFRKEVS0WJ');
+      </script>
+
+    <title>Sustainify Shop</title>
+
+    <style>
+        nav {
+            height: 80px;
+            background-color: #007bff;
+        }
+        nav h2 {
+            color: white;
+            font-size: 28px;
+        }
+
+        .container {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .btn-custom {
+            width: 100%;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .main-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .main-box {
+            background: white;
+            padding: 40px 0;
+        }
+
+        
+    </style>
+</head>
+<body class="bg-light" style="background-image: url('https://images.prismic.io/dogsontheroad/Z_VvDndAxsiBwdMf_pexels-marcin-jozwiak-199600-3109819.jpg?auto=format,compress&rect=0,1137,5464,1366&w=4000&h=1000');  background-size: contain; background-position: top;">
+
+    <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+        <h2 >Sustainify Shop</h2>
+    </nav>
+
+    
+
+    <div class="container text-center mt-4 d-grid gap-3" >
+        <button class="btn btn-outline-info btn-lg btn-custom" onclick="location.href='./moneyshop'">
+            Money Shopping Assistance
+        </button>
+        <button class="btn btn-outline-info btn-lg btn-custom" onclick="location.href='./carbonfoot'">
+            Sustainable Shopping Assistance
+        </button>
+        <button class="btn btn-outline-info btn-lg btn-custom" onclick="location.href='./foodnutrition'">
+            Food Nutrition Assistance
+        </button>
+    </div>
+
+    <section class="container-fluid px-0 main-box">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="https://www.giosg.com/hs-fs/hubfs/online-shopping-2022-11-01-02-35-05-utc%20(1).jpg?width=6016&height=4016" alt="Money Shopping Assistance">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <h2>Money Shopping Assistance</h2>
+                <p class="lead">
+                    Money Shopping Assistance helps you make smarter financial decisions while shopping. 
+                    It provides budget-friendly choices, price comparisons, and cost-effective alternatives, 
+                    ensuring you get the best value for your money.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0 main-box">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-2">
+                <img src="https://i.pcmag.com/imagery/articles/01dITSJznwNhfew5UYscn3c-2..v1693581778.jpg" alt="Sustainable Shopping Assistance">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-1">
+                <h2>Sustainable Shopping Assistance</h2>
+                <p class="lead">
+                    The Sustainable Shopping Assistant tracks the environmental impact of purchases, 
+                    displaying carbon footprint and water usage. It promotes eco-friendly shopping, 
+                    encouraging responsible consumption and sustainable choices. 🌱♻️
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0 main-box">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="https://modassistants.com/wp-content/uploads/2023/03/ello-AEU9UZstCfs-unsplash-scaled.jpg" alt="Food Nutrition Assistance">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <h2>Food Nutrition Assistance</h2>
+                <p class="lead">
+                    The Food Nutrition Assistant helps users make healthier food choices by providing 
+                    nutritional insights for selected items. It tracks calories, protein, fats, and 
+                    essential nutrients, promoting balanced eating habits. 🍎🥗
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+
+<%- include('partials/foot') %>

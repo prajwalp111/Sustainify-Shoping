@@ -1,0 +1,91 @@
+<%- include('partials/head') %>
+<title>Food Nutrition Assistance</title>
+
+  </head>
+<body class="bg-light">
+
+  <%- include('partials/nav') %>
+
+  
+    <div class="container-fluid navbar p-3 mb-2 text-white py-1">
+        <h6 class="mx-auto text-dark">Food Nutrition Assistance</h6>
+    </div>
+</nav>
+
+  <div class="main-wrapper" id="box1">
+  <div class="container mt-4">
+    
+    <div class="row g-4">
+      <div class="mb-3 col-md-9">
+        <label for="foodSelect" class="form-label">Select a Food Item:</label>
+        <select id="foodSelect"  class="form-select" >
+          <option value="">-- Choose a food item --</option>
+          <option value="Apple">Apple</option>
+          <option value="Banana">Banana</option>
+          <option value="Chicken Breast">Chicken Breast</option>
+          <option value="Eggs">Eggs</option>
+          <option value="Milk">Milk</option>
+          <option value="Rice">Rice</option>
+          <option value="Almonds">Almonds</option>
+          <option value="Salmon">Salmon</option>
+          <option value="Lentils">Lentils</option>
+          <option value="Avocado">Avocado</option>
+          <option value="Lays (1 pack)">Lays (1 pack)</option>
+          <option value="Maggi (1 pack)">Maggi (1 pack)</option>
+          <option value="Wheat (1kg)">Wheat (1kg)</option>
+          <option value="Oats (1 cup)">Oats (1 cup)</option>
+          <option value="Quinoa (1 cup)">Quinoa (1 cup)</option>
+          <option value="Paneer (100g)">Paneer (100g)</option>
+          <option value="Tofu (100g)">Tofu (100g)</option>
+          <option value="Peanuts (100g)">Peanuts (100g)</option>
+          <option value="Walnuts (100g)">Walnuts (100g)</option>
+          <option value="Chia Seeds (28g)">Chia Seeds (28g)</option>
+          <option value="Flaxseeds (28g)">Flaxseeds (28g)</option>
+          <option value="Sweet Potato (100g)">Sweet Potato (100g)</option>
+          <option value="Broccoli (100g)">Broccoli (100g)</option>
+          <option value="Carrots (100g)">Carrots (100g)</option>
+          <option value="Spinach (100g)">Spinach (100g)</option>
+          <option value="Cucumber (100g)">Cucumber (100g)</option>
+          <option value="Mango (100g)">Mango (100g)</option>
+          <option value="Blueberries (100g)">Blueberries (100g)</option>
+          <option value="Cottage Cheese (100g)">Cottage Cheese (100g)</option>
+          <option value="Dark Chocolate (100g)">Dark Chocolate (100g)</option>
+          <option value="Coconut (100g)">Coconut (100g)</option>
+      </select>
+      
+    </div>
+        
+    <div class="mb-3 col-md-3 d-flex align-items-end">
+      <button class="btn btn-success " onclick="addProduct()">Add to List</button>
+    </div>
+    </div>
+
+</div>
+    
+    <div class="container mt-5">
+
+      <div class="alert alert-info row" >
+        <div class="col"><strong>Total Calories:</strong> <span id="totalCalory">0</span> kcal</div>
+    
+        <div class="col"><strong>Total Protein:</strong> <span id="totalProtein">0</span> g</div>
+
+        <div class="col"><strong>Total Fats:</strong> <span id="totalFats">0</span> g</div>
+    </div>
+      
+  </div>
+
+  <div class="container">
+    <ul id="shoppingList" class="list-group mb-3"></ul>
+  </div>
+
+
+  </div>
+
+  <script src="/script3.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
+

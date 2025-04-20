@@ -1,0 +1,55 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+#stats{
+    width: 50%;
+    height: 30%;
+    background-color: aquamarine;
+    padding-bottom: 20px;
+}
+.sentence{
+    text-align: right;
+}
+#addItems{ 
+    background-color: rgb(14, 148, 197); /* Optional: to make sure it stands out */
+   
+}
+#foot{
+   width: 100vw;
+
+  position: initial;
+  bottom: 0;
+   
+}
+
+#sidebar{
+    display: table-column;
+   
+}
+
+ #list{
+    padding-bottom: 20px;
+    list-style: none;
+    text-align: center;
+    font-size: x-large;
+ }
+
+
+
+ ul button{
+    width: 100%;
+ }
+
+ #list li{
+    width: 100%;
+ }
+ #list li button{
+    width : 20%
+ }
+
+ #box1{
+    height: 100vh;
+ }
+

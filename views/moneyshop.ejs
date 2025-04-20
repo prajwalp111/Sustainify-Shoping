@@ -1,0 +1,60 @@
+<%- include('partials/head') %>
+
+<title>Money Shopping Assistance</title>
+</head>
+
+<body class="bg-light">
+
+    <%- include('partials/nav') %>
+   
+        <div class="container-fluid navbar p-3 mb-2 text-white py-1">
+            <h6 class="mx-auto text-white">Money Shopping Assistance</h6>
+        </div>
+    </nav>
+    
+
+<div class="main-wrapper" id="box1">
+    <div class="container mt-4">
+        <div class="card shadow-sm p-3">
+            <label for="amount"><sub>*To enter amount click on 'Total Amount'</sub></label>
+            <div class="row align-items-center" onclick="enterAmount()" id="amount">
+                <div class="col fs-4" >Total Amount:</div>
+                <h3 class="col text-end text-primary fw-bold" id="tcost">0</h3>
+            </div>
+            <div class="row align-items-center mt-2">
+                <div class="col fs-4">Current Balance:</div>
+                <h3 class="col text-end text-success fw-bold" id="cbalanceNum">0.0</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row g-3">
+            <div class="col-md-5">
+                <input type="text" class="form-control shadow-sm" placeholder="Item Name" id="item">
+            </div>
+            <div class="col-md-5">
+                <input type="number" class="form-control shadow-sm" placeholder="Item Cost" id="itemcost">
+            </div>
+            <button class="btn btn-success  col-md-2" id="addItems">
+                +
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <ul class="list-group" id="list"></ul>
+    </div>
+
+    
+
+</div>
+ 
+
+    <script src="script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

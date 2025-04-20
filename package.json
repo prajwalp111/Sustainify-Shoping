@@ -1,0 +1,15 @@
+{
+  "name": "sustainify-shoping",
+  "version": "1.0.0",
+  "description": "Sustainify Shop is a web-based platform designed to assist users in making smarter shopping decisions by integrating financial management, sustainability tracking, and nutritional analysis. It provides three key shopping assistance tools:",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}

@@ -1,0 +1,37 @@
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sustainify Shop</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" id="sidebar">
+
+      <ul style="list-style: none;">
+        <li><button class="btn btn-outline-secondary btn-custom my-2" onclick="location.href='/'">
+          Home
+      </button></li>
+      <li><button class="btn btn-outline-secondary btn-custom my-2" onclick="location.href='./moneyshop'">
+          Money shopping assistant
+      </button></li>
+      <li><button class="btn btn-outline-secondary btn-custom my-2" onclick="location.href='./carbonfoot'">
+        Carbon release and Water usage
+    </button></li>
+      <li><button class="btn btn-outline-secondary my-2 btn-custom " onclick="location.href='./foodnutrition'">
+        Food Nutrition Assistance
+    </button></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <% if (navImage) { %>
+  <nav class="navbar   text-center  bg-success py-2"  style="background-image: url('<%= navImage %>');  background-size: cover; background-position: center; ">
+    <% } %>
+
+    <div class="container-fluid  text-center ">
+      <button class="btn text-light" id="byn_nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-label="Toggle Navigation">
+            <i class="bi bi-list"></i>
+        </button>
+        <h5 class="mx-auto  text-primary">Sustainable Shopping Assistant</h5>
+    </div>
